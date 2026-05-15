@@ -32,10 +32,10 @@ Welcome to the Ait-Dev-lab research documentation. Our work focuses on making LL
 
 ## 🔗 Quick Links
 
+- [Home](https://ait-dev-lab.github.io/.github/)
 - [Live Demo](https://ait-dev-lab.github.io/stream-llm/)
 - [GitHub Organization](https://github.com/Ait-Dev-lab)
 - [Stream LLM Repository](https://github.com/Ait-Dev-lab/stream-llm)
-- [Organization Profile](https://github.com/Ait-Dev-lab)
 
 ---
 
