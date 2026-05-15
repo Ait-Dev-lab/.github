@@ -1,25 +1,59 @@
 ---
 title: Ait-Dev-lab
+description: Research lab focused on browser-native AI inference
 ---
 
 # 🧠 Ait-Dev-lab
 
 **Research lab focused on browser-native AI inference.**
 
-## 📚 Documentation
-
-Our research documentation is available here:
-
-- [Research Overview](docs/)
-- [WebGPU Inference](docs/research/webgpu-inference.md)
-- [Model Sharding](docs/research/model-sharding.md)
-- [Memory Optimization](docs/research/memory-optimization.md)
-- [Streaming Architecture](docs/research/streaming-architecture.md)
-
-## 🚀 Live Project
-
-[Stream LLM](https://ait-dev-lab.github.io/stream-llm/) — Browser-based LLM inference
+We build LLM infrastructure that runs entirely on user devices — **no API keys, no cloud GPUs, no rate limits.**
 
 ---
 
-*Documentation in progress. Check back for updates.*
+## 🎯 Mission
+
+Democratize AI by making large language models run **locally in the browser** — private, free, and accessible to anyone with a modern device.
+
+---
+
+## 🔬 Research Areas
+
+- **WebGPU Inference** — Compute shaders for LLM acceleration
+- **Model Sharding** — Splitting 2GB+ models into 30+ small chunks
+- **Memory Optimization** — Running on 256MB-512MB integrated GPUs
+- **Streaming Architecture** — Hybrid server/client token generation
+
+---
+
+## 📚 Documentation
+
+Browse our [research documentation](docs/) for detailed papers and technical guides.
+
+| Document | Description |
+|----------|-------------|
+| [WebGPU Inference](docs/research/webgpu-inference.md) | Using compute shaders for browser-based LLM inference |
+| [Model Sharding](docs/research/model-sharding.md) | Splitting 2GB+ models into 30+ small chunks |
+| [Memory Optimization](docs/research/memory-optimization.md) | Running LLMs on consumer integrated GPUs |
+| [Streaming Architecture](docs/research/streaming-architecture.md) | Hybrid server/client token generation |
+
+---
+
+## 🚀 Live Project
+
+**👉 [Try Stream LLM](https://ait-dev-lab.github.io/stream-llm/) 👈**
+
+Browser-based LLM inference — no installation, no signup, no API key required.
+
+---
+
+## 🔗 Links
+
+- [GitHub Organization](https://github.com/Ait-Dev-lab)
+- [Stream LLM Repository](https://github.com/Ait-Dev-lab/stream-llm)
+- [Research Documentation](docs/)
+- [About Us](about/)
+
+---
+
+*Building the infrastructure for browser-native AI.*
