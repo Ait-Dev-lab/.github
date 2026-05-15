@@ -1,4 +1,4 @@
-# 🧠 Ait-Dev-lab
+#  Ait-Dev-lab
 
 **Research lab focused on browser-native AI inference.**
 
