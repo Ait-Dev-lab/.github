@@ -17,19 +17,6 @@ Welcome to the Ait-Dev-lab research documentation. Our work focuses on making LL
 |---------|--------|-------|
 | Stream LLM | ✅ Live | [Demo](https://ait-dev-lab.github.io/stream-llm/) · [GitHub](https://github.com/Ait-Dev-lab/stream-llm) |
 
-## 📊 Research Areas
-
-- **WebGPU Inference** — Compute shaders for LLM acceleration
-- **Model Sharding** — Splitting models into browser-friendly chunks
-- **Memory Optimization** — Running on 256MB-512MB integrated GPUs
-- **Streaming Architecture** — Hybrid server/client token generation
-
-## 📅 Latest Updates
-
-- **May 15, 2026** — Published WebGPU Inference and Model Sharding papers
-- **May 15, 2026** — Launched documentation site
-- **Apr 26, 2026** — Released Stream LLM v1.0.0 with 30 shards (1.87GB)
-
 ## 🔗 Quick Links
 
 - [Home](https://ait-dev-lab.github.io/.github/)
