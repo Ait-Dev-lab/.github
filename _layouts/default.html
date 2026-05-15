@@ -14,63 +14,23 @@
             padding: 2rem;
         }
         .container { max-width: 900px; margin: 0 auto; }
-        
-        /* Navigation */
-        .nav {
-            display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid #334155;
-        }
-        .nav a {
-            color: #94a3b8;
-            text-decoration: none;
-            font-size: 0.9rem;
-        }
-        .nav a:hover {
-            color: #60a5fa;
-            text-decoration: underline;
-        }
-        .nav a.active {
-            color: #60a5fa;
-            font-weight: 500;
-        }
-        
         a { color: #60a5fa; text-decoration: none; }
         a:hover { text-decoration: underline; }
-        
         hr { border-color: #334155; margin: 2rem 0 1rem; }
-        
         .footer {
             text-align: center;
             margin-top: 2rem;
             color: #64748b;
             font-size: 0.75rem;
         }
-        
         @media (max-width: 600px) {
             body { padding: 1rem; }
-            .nav { gap: 1rem; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Navigation -->
-        <div class="nav">
-            <a href="/.github/" class="{% if page.url == '/' or page.url == '/.github/' %}active{% endif %}">🏠 Home</a>
-            <a href="/.github/docs/" class="{% if page.url contains '/docs/' %}active{% endif %}">📚 Docs</a>
-            <a href="/.github/about/" class="{% if page.url contains '/about/' %}active{% endif %}">ℹ️ About</a>
-            <a href="https://ait-dev-lab.github.io/stream-llm/" target="_blank">🧠 Stream LLM</a>
-            <a href="https://github.com/Ait-Dev-lab" target="_blank">🐙 GitHub</a>
-        </div>
-        
-        <!-- Page Content -->
         {{ content }}
-        
-        <!-- Footer -->
         <div class="footer">
             <hr>
             <p>Ait-Dev-lab · Browser-native AI research · Hosted on GitHub Pages</p>
