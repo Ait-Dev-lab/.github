@@ -1,3 +1,4 @@
 # _config.yml
 theme: jekyll-theme-minimal
+title: ""
 description: Research lab focused on browser-native AI inference
