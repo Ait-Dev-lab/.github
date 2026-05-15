@@ -14,12 +14,7 @@ Democratize AI by making large language models run **locally in the browser** â€
 
 ## Research
 
-Browse our [research documentation](docs/) for the latest papers on:
-
-- WebGPU Inference
-- Model Sharding
-- Memory Optimization
-- Streaming Architecture
+Browse our [research documentation](docs/) for the latest papers.
 
 ---
 
