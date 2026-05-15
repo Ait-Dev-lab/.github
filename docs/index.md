@@ -25,9 +25,9 @@ Welcome to the Ait-Dev-lab research documentation. Our work focuses on making LL
 
 ## 🚀 Active Projects
 
-| Project | Status | Links |
-|---------|--------|-------|
-| Stream LLM | ✅ Live | [Demo](https://ait-dev-lab.github.io/stream-llm/) · [GitHub](https://github.com/Ait-Dev-lab/stream-llm) |
+| Project | Description | Status | Links |
+|---------|-------------|--------|-------|
+| Stream LLM | Browser-based LLM inference with WebGPU sharding | ✅ Live | [Demo](https://ait-dev-lab.github.io/stream-llm/) · [GitHub](https://github.com/Ait-Dev-lab/stream-llm) |
 
 ---
 
