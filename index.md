@@ -1,7 +1,3 @@
----
-layout: default
----
-
 # Ait-Dev-lab
 
 **Research lab focused on browser-native AI inference.**
