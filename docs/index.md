@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # 📚 Research Documentation
 
 Welcome to the Ait-Dev-lab research documentation. Our work focuses on making LLMs run efficiently in browsers using WebGPU.
@@ -6,12 +10,16 @@ Welcome to the Ait-Dev-lab research documentation. Our work focuses on making LL
 
 ## 🔬 Research Papers
 
-| Document | Description | Status |
-|----------|-------------|--------|
-| [WebGPU Inference for LLMs](research/webgpu-inference.md) | Using compute shaders for browser-based LLM inference | ✅ Published |
-| [Model Sharding for Browser LLMs](research/model-sharding.md) | Splitting 2GB+ models into 30+ small chunks | ✅ Published |
-| [Memory Optimization for Consumer GPUs](research/memory-optimization.md) | Running LLMs on 256MB-512MB integrated GPUs | 🔄 Ongoing |
-| [Streaming Architecture for LLM Inference](research/streaming-architecture.md) | Hybrid server/client token generation | 🔄 Ongoing |
+{% assign papers_by_status = site.research | group_by: "status" %}
+
+{% for status_group in papers_by_status %}
+### {{ status_group.name }}
+
+| Title | Description | Date |
+|-------|-------------|------|
+{% for paper in status_group.items %} | [{{ paper.title }}]({{ paper.url }}) | {{ paper.description }} | {{ paper.date | date: "%b %d, %Y" }} |
+{% endfor %}
+{% endfor %}
 
 ---
 
@@ -32,4 +40,4 @@ Welcome to the Ait-Dev-lab research documentation. Our work focuses on making LL
 
 ---
 
-*Documentation updated: May 15, 2026*
+*Documentation auto-updates when new papers are added.*
