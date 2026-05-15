@@ -36,7 +36,6 @@ Browser-based LLM inference — no installation, no signup, no API key required.
 - [GitHub Organization](https://github.com/Ait-Dev-lab)
 - [Stream LLM Repository](https://github.com/Ait-Dev-lab/stream-llm)
 - [Research Documentation](docs/)
-- [About Us](about/)
 
 ---
 
