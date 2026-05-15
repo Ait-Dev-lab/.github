@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ait-Dev-lab — Browser-Native AI Research</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            margin-bottom: 1rem;
+        }
+
+        .mission {
+            background: #1e293b;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+            border-left: 4px solid #3b82f6;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        /* Sections */
+        h2 {
+            font-size: 1.6rem;
+            margin: 2rem 0 1rem;
+            color: #60a5fa;
+            border-left: 3px solid #3b82f6;
+            padding-left: 1rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin: 1.5rem 0 0.5rem;
+            color: #a78bfa;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            background: #1e293b;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 0.85rem;
+            text-align: left;
+            border-bottom: 1px solid #334155;
+        }
+
+        th {
+            background: #334155;
+            color: #cbd5e1;
+            font-weight: 600;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Stack list */
+        .stack-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin: 1rem 0;
+        }
+
+        .stack-item {
+            background: #1e293b;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            border: 1px solid #334155;
+        }
+
+        /* Links */
+        a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .demo-button {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 40px;
+            font-weight: 600;
+            margin: 1rem 0;
+            transition: background 0.2s;
+        }
+
+        .demo-button:hover {
+            background: #2563eb;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            border-top: 1px solid #334155;
+            color: #64748b;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 700px) {
+            .container {
+                padding: 1rem;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            th, td {
+                padding: 0.6rem;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧠 Ait-Dev-lab</h1>
+            <div class="tagline">Research lab focused on browser-native AI inference</div>
+            <div class="mission">
+                We build LLM infrastructure that runs entirely on user devices — <strong>no API keys, no cloud GPUs, no rate limits.</strong>
+            </div>
+        </div>
+
+        <h2>🎯 Mission</h2>
+        <p>Democratize AI by making large language models run <strong>locally in the browser</strong> — private, free, and accessible to anyone with a modern device.</p>
+
+        <h2>🔬 Research Areas</h2>
+        <table>
+            <thead>
+                <tr><th>Area</th><th>Focus</th></tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>WebGPU Inference</strong></td><td>Compute shaders for LLM acceleration</td></tr>
+                <tr><td><strong>Model Sharding</strong></td><td>Splitting large models into browser-friendly chunks</td></tr>
+                <tr><td><strong>Memory Optimization</strong></td><td>Running on 256MB-512MB integrated GPUs</td></tr>
+                <tr><td><strong>Streaming Architecture</strong></td><td>Hybrid server/client token generation</td></tr>
+            </tbody>
+        </table>
+
+        <h2>📦 Current Projects</h2>
+        <table>
+            <thead><tr><th>Project</th><th>Description</th></tr></thead>
+            <tbody>
+                <tr>
+                    <td><strong><a href="https://github.com/Ait-Dev-lab/stream-llm">Stream LLM</a></strong></td>
+                    <td>Browser-based LLM inference with on-demand shard fetching</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>⚡ Technical Approach</h2>
+        <table>
+            <thead><tr><th>Challenge</th><th>Our Solution</th></tr></thead>
+            <tbody>
+                <tr><td>Expensive GPUs</td><td>Consumer integrated GPU support (256MB+)</td></tr>
+                <tr><td>API costs</td><td>No keys, no payments</td></tr>
+                <tr><td>Privacy</td><td>Local browser processing</td></tr>
+                <tr><td>Large models</td><td>30+ shards, fetched on demand</td></tr>
+                <tr><td>Cold starts</td><td>Jumpstart server + uptime monitoring</td></tr>
+            </tbody>
+        </table>
+
+        <h2>🛠️ Stack</h2>
+        <div class="stack-list">
+            <span class="stack-item">WebGPU</span>
+            <span class="stack-item">GGUF Sharding</span>
+            <span class="stack-item">GitHub Releases (CDN)</span>
+            <span class="stack-item">Render (Jumpstart API)</span>
+            <span class="stack-item">GitHub Pages</span>
+        </div>
+
+        <h2>🚀 Live Demo</h2>
+        <p>Try Stream LLM right now — no installation, no signup, no API key.</p>
+        <a href="https://ait-dev-lab.github.io/stream-llm/" class="demo-button">🧠 Launch Stream LLM</a>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem; color: #64748b;">Requires Chrome 113+ or Edge 113+</p>
+
+        <h2>📄 License</h2>
+        <p>MIT © Ait-Dev-lab</p>
+
+        <div class="footer">
+            Building the infrastructure for browser-native AI.<br>
+            <a href="https://github.com/Ait-Dev-lab">GitHub</a> · 
+            <a href="https://ait-dev-lab.github.io/stream-llm/">Stream LLM</a>
+        </div>
+    </div>
+</body>
+</html>
