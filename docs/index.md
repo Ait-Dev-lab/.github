@@ -1,9 +1,3 @@
----
-title: Research Documentation
-description: Complete documentation for Ait-Dev-lab research projects
-layout: default
----
-
 # 📚 Research Documentation
 
 Welcome to the Ait-Dev-lab research documentation. Our work focuses on making LLMs run efficiently in browsers using WebGPU.
