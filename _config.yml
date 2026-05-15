@@ -1,3 +1,17 @@
 # _config.yml
 title: ""
 description: Research lab focused on browser-native AI inference
+
+# Collections for auto-listing research papers
+collections:
+  research:
+    output: true
+    permalink: /docs/research/:path/
+
+# Default front matter for research papers
+defaults:
+  - scope:
+      path: "docs/research"
+      type: "research"
+    values:
+      layout: default
