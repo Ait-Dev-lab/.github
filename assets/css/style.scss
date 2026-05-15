@@ -1,0 +1,14 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Hide the repository name header */
+.page-header {
+  display: none;
+}
+
+/* Or just hide the h1 if that's the culprit */
+.page-header h1 {
+  display: none;
+}
