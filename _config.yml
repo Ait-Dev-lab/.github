@@ -1,0 +1,4 @@
+# _config.yml
+theme: jekyll-theme-minimal
+title: Ait-Dev-lab Docs
+description: Research documentation for browser-native AI inference
