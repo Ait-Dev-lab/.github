@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title | default: "Ait-Dev-lab" }}</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+            padding: 2rem;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        a { color: #60a5fa; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        hr { border-color: #334155; margin: 1rem 0; }
+        .footer { text-align: center; margin-top: 2rem; color: #64748b; font-size: 0.75rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        {{ content }}
+        <div class="footer">
+            <hr>
+            <p>Maintained by Ait-Dev-lab · Hosted on GitHub Pages</p>
+        </div>
+    </div>
+</body>
+</html>
