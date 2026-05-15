@@ -16,12 +16,14 @@ Democratize AI by making large language models run **locally in the browser** �
 
 ---
 
-## Research Areas
+## Research
 
-- **WebGPU Inference** — Compute shaders for LLM acceleration
-- **Model Sharding** — Splitting 2GB+ models into 30+ small chunks
-- **Memory Optimization** — Running on 256MB-512MB integrated GPUs
-- **Streaming Architecture** — Hybrid server/client token generation
+Browse our [research documentation](docs/) for the latest papers on:
+
+- WebGPU Inference
+- Model Sharding
+- Memory Optimization
+- Streaming Architecture
 
 ---
 
